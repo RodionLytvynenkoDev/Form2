@@ -1,0 +1,61 @@
+.example-accordion {
+  display: block;
+  max-width: 100%;
+  margin-left: var(--radius);
+  margin-right: var(--radius);
+  margin-bottom: 5%;
+}
+  
+.example-accordion-item {
+  display: block;
+  border: solid 1px #ccc;
+}
+
+.example-accordion-item + .example-accordion-item {
+  border-top: none;
+}
+
+.example-accordion-item-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.example-accordion-item-description {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.example-accordion-item-header {
+  padding: 16px;
+}
+.example-accordion-item-body {
+  padding: 16px;
+  text-align: center;
+
+  line-height: 2;
+  
+}
+
+.example-accordion-item-header:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.example-accordion-item:first-child {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.example-accordion-item:last-child {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+* {
+  --radius: 4px;
+  --elem_center: auto
+}
+
+
+  
